@@ -57,7 +57,7 @@ ORDER BY category ASC;
 of employees whose salary is higher than the salary of the employee who receives a higher commission than Alice. */
 -- selecting the name and salary of thr employee who earnes a salary highter than 
 -- the salary of the employee who earnes a commission higher
-                 -- than the commission earned by alice
+-- than the commission earned by alice
 SELECT first_name || ' ' || last_name AS name, salary,
        -- NVL: if commission is null then 'no commission'
        NVL(TO_CHAR(commission), 'no commission') AS commission
@@ -108,7 +108,6 @@ WHERE department_code IN (
 in the Science department increase by 2%, the prices of books in the Adventure department increase by 3%, 
 and for the rest of the books, the prices increase by 5%. Display the title, price before the increase, 
 and price after the increase of the books, as well as the department they belong to. */
-
 SELECT
     title,
     department.department_name AS "DEPARTMENT NAME",
