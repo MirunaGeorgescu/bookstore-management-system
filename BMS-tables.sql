@@ -283,6 +283,14 @@ INSERT INTO book (isbn, author_id, department_code, title, category, publication
 VALUES 
 ('9780486264671', 5, 4, 'Robinson Crusoe', 'Adventure', TO_DATE('1997-11-10', 'YYYY-MM-DD'), 80, 15);
 
+-- Stephen Hawking - Science
+INSERT INTO book (isbn, author_id, department_code, title, category, publication_date, number_of_copies, price)
+VALUES 
+('9780553380163', 8, 6, 'A Brief History of Time', 'Science', TO_DATE('1998-09-01', 'YYYY-MM-DD'), 50, 40);
+
+INSERT INTO book (isbn, author_id, department_code, title, category, publication_date, number_of_copies, price)
+VALUES 
+('9781476738024', 6, 5, 'A Man Called Ove', 'Fiction', TO_DATE('2014-07-15', 'YYYY-MM-DD'), 75, 28);
 
 -- EMPLOYEE TABLE
 -- creating the table 
